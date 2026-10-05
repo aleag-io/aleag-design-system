@@ -1,0 +1,12 @@
+<!-- @dsCard group="Status" height=80 subtitle="Seven tones, optional dot" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Badge</title>
+<style>body{margin:0;background:var(--canvas)}#root{display:flex;flex-wrap:wrap;gap:8px;padding:24px}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h(A.Badge,null,'Draft'),h(A.Badge,{tone:'primary'},'Consulting'),h(A.Badge,{tone:'accent'},'New'),
+ h(A.Badge,{tone:'success',dot:true},'Paid'),h(A.Badge,{tone:'warning',dot:true},'Due in 3 days'),
+ h(A.Badge,{tone:'danger',dot:true},'Overdue'),h(A.Badge,{tone:'info',dot:true},'In review')));
+</script></body></html>

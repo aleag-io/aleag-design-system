@@ -1,0 +1,13 @@
+<!-- @dsCard group="Forms" height=280 subtitle="Default, prefix, error, multiline" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>TextField</title>
+<style>body{margin:0;background:var(--canvas)}#root{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:24px}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h(A.TextField,{label:'Work email',placeholder:'name@company.com',hint:'We reply within one working day.'}),
+ h(A.TextField,{label:'Budget',prefix:'$',defaultValue:'4,500'}),
+ h(A.TextField,{label:'Board thickness',defaultValue:'18 mmm',error:'Enter a number in millimetres, like 18.'}),
+ h(A.TextField,{label:'What do you need help with?',multiline:true,placeholder:'Our Microsoft 365 tenant needs a clean-up before we hire.'})));
+</script></body></html>

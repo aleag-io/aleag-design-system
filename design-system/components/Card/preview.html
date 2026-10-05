@@ -1,0 +1,16 @@
+<!-- @dsCard group="Layout" height=540 subtitle="Service card, product card with footer" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Card</title>
+<style>body{margin:0;background:var(--canvas)}#root{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;padding:24px}
+.grain{background:repeating-linear-gradient(100deg,var(--walnut-600) 0 6px,#7a5c45 6px 9px,var(--walnut-600) 9px 15px,#5e4433 15px 17px)}
+.price{font:500 14px/20px var(--font-mono);font-variant-numeric:tabular-nums;color:var(--ink)}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h(A.Card,{href:'#',eyebrow:'Consulting',title:'Microsoft 365 health check',footer:h(React.Fragment,null,h(A.Badge,{tone:'primary'},'2 weeks'),h(A.Button,{variant:'ghost',size:'sm',iconRight:'→'},'Details'))},
+  'We review licences, security defaults and sharing, then hand you a short written plan.'),
+ h(A.Card,{eyebrow:'Workshop',title:'Walnut side table',media:h('div',{className:'grain',role:'img','aria-label':'Walnut grain'}),
+  footer:h(React.Fragment,null,h('span',{className:'price'},'$1,240.00'),h(A.Badge,{tone:'success',dot:true},'In stock'))},
+  'Solid black walnut, hand-cut dovetails, oil and wax finish. 450 × 450 × 560 mm.')));
+</script></body></html>

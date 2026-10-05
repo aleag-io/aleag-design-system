@@ -1,0 +1,14 @@
+<!-- @dsCard group="Brand" height=180 subtitle="Mark, horizontal, stacked, reversed" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Logo</title>
+<style>body{margin:0;background:var(--canvas)}#root{display:flex;flex-wrap:wrap;align-items:center;gap:32px;padding:24px}.inv{background:var(--inverse-surface);padding:16px 24px;border-radius:var(--radius-md)}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h(A.Logo,{size:64}),
+ h(A.Logo,{variant:'horizontal',size:64}),
+ h(A.Logo,{variant:'stacked',size:48}),
+ h('div',{className:'inv'},h(A.Logo,{variant:'horizontal',tone:'reversed',size:56})),
+ h('span',{style:{color:'var(--ink)'}},h(A.Logo,{tone:'mono',size:28}))));
+</script></body></html>

@@ -1,0 +1,21 @@
+<!-- @dsCard group="Actions" height=150 subtitle="Primary, secondary, tonal, ghost, accent, danger; three sizes" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Button</title>
+<style>body{margin:0;background:var(--canvas)}#root{display:grid;gap:16px;padding:24px}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement,arrow='→';
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h('div',{className:'row'},
+  h(A.Button,{variant:'primary',iconRight:arrow},'Book a call'),
+  h(A.Button,null,'View our work'),
+  h(A.Button,{variant:'tonal'},'Download PDF'),
+  h(A.Button,{variant:'ghost'},'Cancel'),
+  h(A.Button,{variant:'accent'},'Get a quote'),
+  h(A.Button,{variant:'danger'},'Delete project')),
+ h('div',{className:'row'},
+  h(A.Button,{variant:'primary',size:'sm'},'Small'),
+  h(A.Button,{variant:'primary'},'Medium'),
+  h(A.Button,{variant:'primary',size:'lg'},'Large'),
+  h(A.Button,{variant:'primary',disabled:true},'Disabled'))));
+</script></body></html>

@@ -1,0 +1,94 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Logos": {
+      "files": {
+        "aleag-app-icon.svg": {
+          "blob": "894af95959728d9725bdb3f98b8e5fa3",
+          "name": "aleag-app-icon.svg",
+          "size": 472,
+          "type": "image/svg+xml"
+        },
+        "aleag-horizontal-reversed.svg": {
+          "blob": "ad44700a0e2f1093bcd15e2c55a87863",
+          "name": "aleag-horizontal-reversed.svg",
+          "size": 15814,
+          "type": "image/svg+xml"
+        },
+        "aleag-horizontal.svg": {
+          "blob": "eec1a89bf7f254562b4212ce50a2f8de",
+          "name": "aleag-horizontal.svg",
+          "size": 15814,
+          "type": "image/svg+xml"
+        },
+        "aleag-mark-mono.svg": {
+          "blob": "e7fca7ddfdd96db7332eae1ad564706a",
+          "name": "aleag-mark-mono.svg",
+          "size": 417,
+          "type": "image/svg+xml"
+        },
+        "aleag-mark-reversed.svg": {
+          "blob": "d9bddfcaf4a3fac0c7e0ac9c94903965",
+          "name": "aleag-mark-reversed.svg",
+          "size": 417,
+          "type": "image/svg+xml"
+        },
+        "aleag-mark.svg": {
+          "blob": "0646703284b5a974f682af1a9198d97b",
+          "name": "aleag-mark.svg",
+          "size": 417,
+          "type": "image/svg+xml"
+        },
+        "aleag-stacked.svg": {
+          "blob": "96315b0aee0bac9c9d665ba0541d37fe",
+          "name": "aleag-stacked.svg",
+          "size": 15820,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "Logos",
+      "order": [
+        "aleag-horizontal.svg",
+        "aleag-stacked.svg",
+        "aleag-mark.svg",
+        "aleag-horizontal-reversed.svg",
+        "aleag-mark-reversed.svg",
+        "aleag-mark-mono.svg",
+        "aleag-app-icon.svg"
+      ],
+      "tile": "l"
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-05T01:40:00Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "groups": [
+    "Logos"
+  ],
+  "lastChange": {
+    "by": "Anoop George",
+    "at": "2026-10-05T03:34:00Z",
+    "via": "Claude Code",
+    "note": "True-blue primary (no violet), neutral greys, steel-cyan info, crisper corners."
+  },
+  "layout": "files",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "Aleag",
+  "sections": {},
+  "title": "aleag"
+}

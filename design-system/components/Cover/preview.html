@@ -1,0 +1,52 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>aleag</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--canvas); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .brand { fill:var(--cobalt-500); }
+  .deep { fill:var(--inverse-surface); }
+  .tint { fill:var(--cobalt-100); }
+  .spark { fill:var(--sun-500); }
+  .blk { rx:var(--radius-md); }
+  .bar { rx:var(--radius-xs); }
+  .ring-cut { fill:none; stroke:var(--canvas); stroke-width:12px; }
+  .ring-hi { fill:none; stroke:var(--cobalt-300); stroke-width:12px; }
+  .words { position:absolute; left:var(--space-10); bottom:var(--space-8); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:120px; line-height:.9; font-weight:700; letter-spacing:-.04em; color:var(--ink); }
+  .tag { margin:var(--space-3) 0 0 6px; font-size:14px; line-height:20px; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      cobalt-500 slab 168×240 bled off the top (the primary, largest) · inverse-surface 296×168 bleeding off the right (the deep ground) · cobalt-100 tint 200×80 · sun-500 bar 104×24 once (the spark from the mark) — about 40% of 960×288
+  arrangement one tall cobalt slab with satellites: tint on top, deep block below, the sunbeam bar sliding off the right edge like the bar in the mark
+  pattern     the mark's own bowl: rings of r 22 drawn at the mark's 12px stroke, two cut out of the slab in canvas, one in cobalt-300 on the deep block holding the sunbeam bar, "one glyph, five letters"
+  scales      sides in space-2 multiples; gutters space-4; corners radius-md (10), bar radius-xs; ring stroke = the mark stroke
+-->
+<rect class="brand blk" x="0" y="-24" width="168" height="240" rx="10"/>
+<rect class="tint blk" x="184" y="-12" width="200" height="80" rx="10"/>
+<rect class="spark bar" x="400" y="40" width="104" height="24" rx="4"/>
+<rect class="deep blk" x="184" y="84" width="320" height="180" rx="10"/>
+<circle class="ring-cut" cx="56" cy="88" r="22"/>
+<circle class="ring-cut" cx="112" cy="152" r="22"/>
+<circle class="ring-hi" cx="300" cy="174" r="44"/>
+<rect class="spark bar" x="278" y="166" width="44" height="16" rx="4"/>
+</svg>
+</div>
+<div class="words">
+<p class="name">aleag</p>
+<p class="tag">IT consulting and woodworking, built with care.</p>
+</div>
+</div>
+</body>
+</html>

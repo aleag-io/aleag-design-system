@@ -1,0 +1,95 @@
+/* aleag components. Every value comes from tokens.css. */
+:root { --al-ring: 0 0 0 2px var(--surface), 0 0 0 4px var(--focus); }
+.al-root, body { font-family: var(--font-sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+/* Logo */
+.al-logo { display: inline-block; vertical-align: middle; flex: none; }
+.al-logo-lockup { display: inline-flex; align-items: center; gap: .35em; line-height: 1; }
+.al-logo-stacked { flex-direction: column; gap: .15em; }
+.al-logo-word { position: relative; font-family: "Sacramento", cursive; font-weight: 400; padding-bottom: .22em; letter-spacing: .01em; }
+.al-logo-rule { position: absolute; left: 0; right: 8%; bottom: 0; height: .07em; min-height: 2px; }
+
+/* Button */
+.al-btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); border: 1px solid transparent; border-radius: var(--radius-sm); font: 600 14px/20px var(--font-sans); cursor: pointer; text-decoration: none; white-space: nowrap; transition: background-color var(--duration-fast) var(--ease-standard), border-color var(--duration-fast) var(--ease-standard), box-shadow var(--duration-fast) var(--ease-standard), transform var(--duration-fast) var(--ease-standard); }
+.al-btn:focus-visible { outline: none; box-shadow: var(--al-ring); }
+.al-btn:active:not(:disabled) { transform: scale(.98); }
+.al-btn:disabled { cursor: not-allowed; opacity: .45; }
+.al-btn-sm { height: 32px; padding: 0 var(--space-3); font-size: 13px; }
+.al-btn-md { height: 40px; padding: 0 var(--space-4); }
+.al-btn-lg { height: 48px; padding: 0 var(--space-6); font-size: 15px; border-radius: var(--radius-md); }
+.al-btn-block { display: flex; width: 100%; }
+.al-btn-icon { display: inline-flex; font-size: 1.15em; line-height: 1; }
+.al-btn-primary { background: var(--primary); color: var(--on-primary); box-shadow: var(--elev-1); }
+.al-btn-primary:hover:not(:disabled) { background: var(--primary-hover); }
+.al-btn-primary:active:not(:disabled) { background: var(--primary-pressed); }
+.al-btn-accent { background: var(--accent); color: var(--on-accent); box-shadow: var(--elev-1); }
+.al-btn-accent:hover:not(:disabled) { background: var(--accent-hover); }
+.al-btn-secondary { background: var(--surface); color: var(--ink); border-color: var(--border-strong); }
+.al-btn-secondary:hover:not(:disabled) { background: var(--surface-sunken); }
+.al-btn-tonal { background: var(--primary-soft); color: var(--on-primary-soft); }
+.al-btn-tonal:hover:not(:disabled) { background: var(--primary-soft-hover); }
+.al-btn-ghost { background: transparent; color: var(--primary); }
+.al-btn-ghost:hover:not(:disabled) { background: var(--primary-soft); }
+.al-btn-danger { background: var(--danger); color: var(--on-danger); }
+.al-btn-danger:hover:not(:disabled) { filter: brightness(.94); }
+
+/* TextField */
+.al-field { display: grid; gap: 6px; min-width: 0; }
+.al-field-label { font: 600 14px/20px var(--font-sans); color: var(--ink); }
+.al-input-wrap { display: flex; align-items: stretch; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); background: var(--surface); transition: box-shadow var(--duration-fast) var(--ease-standard), border-color var(--duration-fast) var(--ease-standard); }
+.al-input-prefix { display: flex; align-items: center; padding: 0 0 0 var(--space-3); color: var(--ink-muted); font: 500 14px/20px var(--font-mono); }
+.al-input { width: 100%; box-sizing: border-box; min-height: 40px; padding: 9px var(--space-3); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); background: var(--surface); color: var(--ink); font: 400 15px/20px var(--font-sans); transition: box-shadow var(--duration-fast) var(--ease-standard), border-color var(--duration-fast) var(--ease-standard); }
+.al-input-wrap .al-input { border: 0; background: transparent; padding-left: var(--space-2); }
+textarea.al-input { min-height: 96px; resize: vertical; line-height: 24px; }
+.al-input::placeholder { color: var(--ink-subtle); }
+.al-input:hover, .al-input-wrap:hover { border-color: var(--ink-muted); }
+.al-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft), 0 0 0 1px var(--primary); }
+.al-input-wrap:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft), 0 0 0 1px var(--primary); }
+.al-input-wrap .al-input:focus { box-shadow: none; }
+.al-input:disabled { background: var(--surface-sunken); color: var(--ink-muted); cursor: not-allowed; }
+.al-field-hint { margin: 0; font: 400 13px/18px var(--font-sans); color: var(--ink-muted); }
+.al-field.is-error .al-input, .al-field.is-error .al-input-wrap { border-color: var(--danger); }
+.al-field.is-error .al-field-hint { color: var(--danger); }
+
+/* Card */
+.al-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; background: var(--surface); color: var(--ink); border: 1px solid var(--border); border-radius: var(--radius-md); text-decoration: none; transition: box-shadow var(--duration-base) var(--ease-standard), transform var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard); }
+.al-elev-0 { box-shadow: none; } .al-elev-1 { box-shadow: var(--elev-1); } .al-elev-2 { box-shadow: var(--elev-2); } .al-elev-3 { box-shadow: var(--elev-3); }
+[data-theme="dark"] .al-elev-2, [data-theme="dark"] .al-elev-3 { background: var(--surface-raised); }
+.al-card-link:hover { box-shadow: var(--elev-2); transform: translateY(-2px); border-color: var(--border-strong); }
+.al-card-link:focus-visible { outline: none; box-shadow: var(--al-ring); }
+.al-card-media { aspect-ratio: 16 / 9; max-width: 100%; background: var(--surface-sunken); overflow: hidden; }
+.al-card-media > * { display: block; width: 100%; height: 100%; object-fit: cover; }
+.al-card-body { flex: 1; align-content: start; display: grid; gap: var(--space-2); padding: var(--space-6); }
+.al-card-eyebrow { margin: 0; font: 600 12px/16px var(--font-sans); letter-spacing: .08em; text-transform: uppercase; color: var(--primary); }
+.al-card-title { margin: 0; font: 600 20px/28px var(--font-display); letter-spacing: -.01em; text-wrap: balance; }
+.al-card-content { font: 400 15px/24px var(--font-sans); color: var(--ink-muted); }
+.al-card-footer { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding: var(--space-4) var(--space-6); border-top: 1px solid var(--border); }
+@media (max-width: 599px) { .al-card-body { padding: var(--space-4); } .al-card-footer { padding: var(--space-3) var(--space-4); } }
+
+/* Badge */
+.al-badge { display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px; border-radius: var(--radius-pill); font: 600 12px/16px var(--font-sans); white-space: nowrap; }
+.al-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.al-badge-neutral { background: var(--surface-sunken); color: var(--ink-muted); }
+.al-badge-primary { background: var(--primary-soft); color: var(--on-primary-soft); }
+.al-badge-accent { background: var(--accent); color: var(--on-accent); }
+.al-badge-success { background: var(--success-soft); color: var(--success); }
+.al-badge-warning { background: var(--warning-soft); color: var(--warning); }
+.al-badge-danger { background: var(--danger-soft); color: var(--danger); }
+.al-badge-info { background: var(--info-soft); color: var(--info); }
+
+/* Alert */
+.al-alert { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid transparent; }
+.al-alert-icon { flex: none; margin-top: 2px; }
+.al-alert-body { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.al-alert-title { margin: 0; font: 600 15px/24px var(--font-sans); color: var(--ink); }
+.al-alert-text { font: 400 14px/20px var(--font-sans); color: var(--ink); }
+.al-alert-action { flex: none; align-self: center; }
+.al-alert-info { background: var(--info-soft); color: var(--info); border-color: color-mix(in srgb, var(--info) 25%, transparent); }
+.al-alert-success { background: var(--success-soft); color: var(--success); border-color: color-mix(in srgb, var(--success) 25%, transparent); }
+.al-alert-warning { background: var(--warning-soft); color: var(--warning); border-color: color-mix(in srgb, var(--warning) 25%, transparent); }
+.al-alert-danger { background: var(--danger-soft); color: var(--danger); border-color: color-mix(in srgb, var(--danger) 25%, transparent); }
+
+@media (prefers-reduced-motion: reduce) {
+  .al-btn, .al-card, .al-input, .al-input-wrap { transition-duration: 1ms; }
+  .al-btn:active:not(:disabled), .al-card-link:hover { transform: none; }
+}
