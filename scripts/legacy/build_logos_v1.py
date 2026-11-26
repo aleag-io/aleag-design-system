@@ -1,4 +1,4 @@
-"""Regenerate the aleag logo SVGs in design-system/assets/Logos.
+"""Regenerate the retired v1 aleag logo SVGs in design-system/assets/Retired logos.
 
 The mark is four strokes (bowl, stem, descender, bar). The wordmark is
 Sacramento outlined to paths with fontTools. Run: python3 scripts/build_logos.py
@@ -9,7 +9,7 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.transformPen import TransformPen
-OUT=os.path.join(ROOT,'design-system/assets/Logos')
+OUT=os.path.join(ROOT,'design-system/assets/Retired logos')
 os.makedirs(OUT,exist_ok=True)
 f=TTFont(os.path.join(ROOT,'design-system/fonts/Sacramento.ttf'))
 gs=f.getGlyphSet(); cmap=f.getBestCmap(); upm=f['head'].unitsPerEm

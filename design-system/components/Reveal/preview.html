@@ -1,0 +1,12 @@
+<!-- @dsCard group="Motion" height=300 width=900 subtitle="Staggered scroll-in, with replay" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Reveal</title>
+<style>body{margin:0;background:var(--canvas)}#root{padding:24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}.box{height:120px;border-radius:var(--radius-md);background:var(--surface);border:1px solid var(--border);box-shadow:var(--elev-1);display:grid;place-items:center;font:600 14px/20px var(--font-sans);color:var(--ink-muted)}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+function Demo(){var s=React.useState(0),k=s[0],set=s[1];
+ return h('div',null,h(A.Button,{size:'sm',onClick:function(){set(k+1);}},'Replay'),
+  h('div',{className:'grid',key:k},[0,1,2].map(function(i){return h(A.Reveal,{key:i,delay:i*60},h('div',{className:'box'},'Item '+(i+1)));})));}
+ReactDOM.createRoot(document.getElementById('root')).render(h(Demo));
+</script></body></html>

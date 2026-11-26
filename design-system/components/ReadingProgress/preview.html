@@ -1,0 +1,9 @@
+<!-- @dsCard group="Motion" height=200 width=900 subtitle="42% through a post" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ReadingProgress</title>
+<style>body{margin:0;background:var(--canvas)}#root{padding:32px}.al-progress{position:absolute}.mock{position:relative;padding-top:16px}.line{height:10px;border-radius:5px;background:var(--surface-sunken);margin:12px 0;max-width:680px}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'mock'},h(A.ReadingProgress,{value:0.42,style:{top:0}}),h('div',{className:'line',style:{width:'60%'}}),h('div',{className:'line'}),h('div',{className:'line'}),h('div',{className:'line',style:{width:'80%'}})));
+</script></body></html>

@@ -1,0 +1,12 @@
+<!-- @dsCard group="Content" height=520 width=1040 subtitle="Software, home-lab and workshop tiles" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ProjectCard</title>
+<style>body{margin:0;background:var(--canvas)}#root{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:24px}.ph{width:100%;height:100%}.ph-blue{background:linear-gradient(135deg,var(--cobalt-500),var(--cobalt-900))}.ph-navy{background:var(--inverse-surface)}.grain{background:repeating-linear-gradient(100deg,var(--walnut-600) 0 6px,#7a5c45 6px 9px,var(--walnut-600) 9px 15px,#5e4433 15px 17px)}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h(A.ProjectCard,{href:'#',line:'software',title:'AIOps incident agent',summary:'An incident-response agent with durable workflows and human approval steps.',tags:['Temporal','Python'],year:2026,media:h('div',{className:'ph ph-blue',role:'img','aria-label':'Workflow diagram'})}),
+ h(A.ProjectCard,{href:'#',line:'home',title:'Home NAS and media server',summary:'A one-litre PC, a five-bay enclosure, Plex and automated downloads.',tags:['Plex','Storage'],year:2026,media:h('div',{className:'ph ph-navy',role:'img','aria-label':'NAS on a shelf'})}),
+ h(A.ProjectCard,{href:'#',line:'workshop',title:'Shaker kitchen cabinets',summary:'Face-frame cabinets in maple with inset doors, built in the garage shop.',tags:['Maple','Inset doors'],year:2026,media:h('div',{className:'ph grain',role:'img','aria-label':'Maple cabinet doors'})})));
+</script></body></html>

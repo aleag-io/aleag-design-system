@@ -1,0 +1,11 @@
+<!-- @dsCard group="Site" height=380 width=1040 subtitle="Blog and Work index titles" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>PageHeader</title>
+<style>body{margin:0;background:var(--canvas)}#root{padding:0 24px}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h(A.PageHeader,{eyebrow:'Blog',title:'Notes from the server closet and the shop',intro:'Write-ups on home infrastructure, technology work and furniture builds, as we go.'}),
+ h(A.PageHeader,{eyebrow:'Work',title:'Selected projects',intro:'Technology projects, software and things built from wood.'},h(A.Button,{variant:'primary',iconRight:'→'},'Get in touch'),h(A.Button,null,'Download résumé'))));
+</script></body></html>

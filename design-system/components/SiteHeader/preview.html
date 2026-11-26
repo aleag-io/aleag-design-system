@@ -1,0 +1,13 @@
+<!-- @dsCard group="Site" height=300 width=1040 subtitle="Desktop, condensed on scroll, mobile menu open" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SiteHeader</title>
+<style>body{margin:0;background:var(--canvas)}#root{display:grid;gap:24px;padding:24px}.lbl{font:600 12px/16px var(--font-sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-subtle);margin:0 0 8px}.frame{border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;background:var(--canvas)}.narrow{max-width:390px}.narrow .al-header-nav,.narrow .al-header-cta{display:none!important}.narrow .al-header-toggle{display:inline-flex!important}.narrow .al-header-sheet{display:grid!important}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h('div',null,h('p',{className:'lbl'},'Desktop'),h('div',{className:'frame'},h(A.SiteHeader,{current:'/blog',condense:false,cta:{label:'Get in touch',href:'#'},links:[{label:'Work',href:'/work'},{label:'Blog',href:'/blog'},{label:'About',href:'/about'}]}))),
+ h('div',null,h('p',{className:'lbl'},'Condensed after scrolling'),h('div',{className:'frame'},h(A.SiteHeader,{current:'/work',condense:false,scrolled:true}))),
+ h('div',{className:'narrow'},h('p',{className:'lbl'},'Mobile, menu open'),h('div',{className:'frame',id:'m'},h(A.SiteHeader,{current:'/blog',condense:false,cta:{label:'Get in touch',href:'#'}})))));
+setTimeout(function(){var b=document.querySelector('#m .al-header-toggle');b&&b.click();},50);
+</script></body></html>

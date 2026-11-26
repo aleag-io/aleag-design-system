@@ -1,0 +1,13 @@
+<!-- @dsCard group="Content" height=560 width=900 subtitle="Feature panel, then the divided list" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>PostCard</title>
+<style>body{margin:0;background:var(--canvas)}#root{padding:24px;display:grid;gap:8px}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ h(A.PostCard,{variant:'feature',flag:'Latest',href:'#',date:'2026-11-20',readingTime:9,title:'Building a quiet home NAS on a one-litre PC',excerpt:'A Dell OptiPlex Micro, a five-bay USB-C enclosure and Plex: what worked, what ran hot, and the parts list.',tags:['Home lab','Storage']}),
+ h('div',{style:{height:16}}),
+ h(A.PostCard,{href:'#',date:'2026-11-02',readingTime:6,title:'Glue-ups without the panic',excerpt:'Clamping cauls, open time and a dry run: how we glue up face frames for a run of Shaker cabinets.',tags:[{label:'Woodworking',tone:'workshop'}]}),
+ h(A.PostCard,{href:'#',date:'2026-10-14',readingTime:11,title:'Durable incident workflows with Temporal',excerpt:'Why an incident-response agent needs retries, timers and human sign-off as first-class steps.',tags:['AIOps','Temporal']})));
+</script></body></html>

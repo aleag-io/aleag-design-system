@@ -1,0 +1,9 @@
+<!-- @dsCard group="Content" height=320 width=900 subtitle="No posts yet" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>EmptyState</title>
+<style>body{margin:0;background:var(--canvas)}#root{padding:24px}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(A.EmptyState,{title:'No posts yet',action:h(React.Fragment,null,h(A.Button,{variant:'secondary'},'Subscribe via RSS'),h(A.Button,{variant:'ghost'},'See our work'))},'The first write-ups are on the way: home lab builds, technology notes and furniture projects.'));
+</script></body></html>

@@ -1,9 +1,12 @@
-The aleag mark and lockups as SVG, rebuilt from the v1 brand sheet in the Cobalt + Sunbeam palette: the mark ink is `cobalt-500` (#0a5fe8), a true blue, the bar and underline are `sun-500` (#ffc933).
+The aleag logo: L, A, E and G woven inside a square frame, with "aleag.io" beneath. The `aleag-logo-*` files are the brand's master files. The `aleag-mark-*` files, the app icon and the favicon are cropped from them to the frame alone.
 
-- `aleag-horizontal.svg`: primary lockup on light grounds.
-- `aleag-stacked.svg`: labels, packaging, square avatars.
-- `aleag-mark.svg`: the mark alone on light grounds.
-- `aleag-horizontal-reversed.svg`, `aleag-mark-reversed.svg`: white ink, transparent ground. Use on `inverse-surface` (navy) or `cobalt-500` only. This is where the sunbeam bar reads best.
-- `aleag-mark-mono.svg`: single ink (`ink`, #0b1524) for one-color print, stamps and engraving.
-- `aleag-app-icon.svg`: 512 × 512 full-bleed blue tile for app stores, PWA icons and favicons. Platforms apply their own corner mask.
-- On light grounds the yellow bar is low contrast (1.5:1 on white). Below 32 px tall, use the mono mark or a reversed mark on a blue tile.
+- `aleag-logo.svg`: master, single path in `currentColor`. Use it inline so it takes the surrounding text color.
+- `aleag-logo-black.svg` (#161616): light grounds, single-color print, stamps.
+- `aleag-logo-white.svg`: dark grounds and `cobalt-500`.
+- `aleag-logo-gold.svg` (#C6A15B), `aleag-logo-rose-gold.svg` (#C4897B), `aleag-logo-silver.svg` (#C8C8C8): dark grounds only (navy, `inverse-surface`). All three are too faint on white.
+- `aleag-logo-bronze.svg` (#8C6239): light and cream grounds, kraft and natural wood.
+- `aleag-mark-black.svg`, `aleag-mark-gold.svg`, `aleag-mark-white.svg`: the frame without the aleag.io line, for anything under about 96 px tall, and for laser engraving (12 mm minimum).
+- `aleag-app-icon.svg`: 1024 × 1024 rounded navy tile with the gold mark, for app stores and PWA icons.
+- `aleag-favicon.svg`: the same tile with less padding, for 16–32 px favicons.
+
+Earlier logos are kept, unused, in **Retired logos**.

@@ -1,0 +1,18 @@
+<!-- @dsCard group="Article" height=1080 width=900 subtitle="Headings, links, lists, quote, code, figure, table" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Prose</title>
+<style>body{margin:0;background:var(--canvas)}#root{padding:24px 32px}.fig{height:180px;border-radius:var(--radius-md);background:repeating-linear-gradient(100deg,var(--walnut-600) 0 6px,#7a5c45 6px 9px,var(--walnut-600) 9px 15px,#5e4433 15px 17px)}</style>
+</head><body><div id="root"></div>
+<script>
+var A=window.Aleag,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(A.Prose,{as:'article'},
+ h('p',null,'The goal was simple: one quiet box that stores family photos, serves Plex to every TV in the house, and does not need babysitting. A ',h('a',{href:'#'},'one-litre PC'),' turned out to be the right size.'),
+ h('h2',null,'The parts list'),
+ h('ul',null,h('li',null,'Dell OptiPlex 7050 Micro, 16 GB RAM'),h('li',null,'Five-bay USB-C drive enclosure'),h('li',null,'Four 8 TB drives in a mirrored pair of pairs')),
+ h('h3',null,'Why not a prebuilt NAS'),
+ h('p',null,'Prebuilt units are tidy, but transcoding 4K needs a real CPU. The OptiPlex has Quick Sync, so ',h('code',null,'hw_transcode'),' just works.'),
+ h('blockquote',null,h('p',null,'Buy the quiet fan first. Everything else can be upgraded later.'),h('cite',null,'Lesson from week one')),
+ h('pre',{tabIndex:0},h('code',null,'docker compose up -d plex sabnzbd\ndocker logs -f plex')),
+ h('figure',null,h('div',{className:'fig',role:'img','aria-label':'Walnut grain close-up'}),h('figcaption',null,'The shelf it lives on: offcuts of black walnut, oil finish.')),
+ h('table',null,h('thead',null,h('tr',null,h('th',null,'Part'),h('th',{className:'num'},'Idle draw'))),h('tbody',null,h('tr',null,h('td',null,'OptiPlex Micro'),h('td',{className:'num'},'9 W')),h('tr',null,h('td',null,'Enclosure, 4 drives'),h('td',{className:'num'},'22 W'))))));
+</script></body></html>

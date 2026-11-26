@@ -1,11 +1,10 @@
 # Logo
 
-Renders the aleag mark, or the mark locked up with the wordmark, inline as SVG so it follows the theme through `mark-ink` and `mark-bar`.
+The aleag logo as an inline SVG: L, A, E and G woven together inside a square frame, with "aleag.io" beneath. It is drawn from the brand's master file and always uses one color at a time.
 
-- **Consumer provides:** `variant`, `tone`, `size` (mark height in px).
-- Use `horizontal` in web headers, invoices and email signatures; `stacked` on labels, packaging and square social avatars; the bare `mark` for app icons, favicons and tight spaces.
-- `tone="reversed"` only on `inverse-surface` or `cobalt-500`. Never place any version on a photo.
-- Keep clear space equal to the bowl radius (about a sixth of the mark's height) on all sides.
-- Minimum size: 20 px tall on screen. Below 32 px, prefer `tone="mono"` so the bar does not fill in.
-- Don't recolor the bar, rotate, outline, add effects, or set the wordmark in any font other than the supplied lettering.
-- For print and files that leave the system, use the SVGs in the **Logos** asset group, not this component.
+- **Consumer provides:** `variant` (`full` or `mark`), `tone`, `size` (height in px), and `label` if the logo isn't the link to the home page.
+- `full` is the whole logo with the aleag.io line, from 96 px tall: the landing page, the footer, documents and signs.
+- `mark` is the frame alone, without the aleag.io line, for anything smaller: the site header (40 px), avatars and favicons.
+- Tones: `color` follows the theme (ink on light, white on dark). On dark grounds (navy, `inverse-surface`) use `gold`, `rose-gold`, `silver` or `reversed` (white). On light or cream grounds use `black` or `bronze`. `mono` takes `currentColor`.
+- Gold on navy is the premium pairing, used in the footer.
+- Never mix two colors in one logo, outline it, rotate it, add effects, or set it on a busy photo.

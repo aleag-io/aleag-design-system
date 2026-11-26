@@ -1,0 +1,31 @@
+{
+  "name": "@aleag/design-system",
+  "version": "1.0.0",
+  "description": "aleag brand, design tokens and React components for aleag.io and the family's other sites and apps.",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleag-io/aleag-design-system.git"
+  },
+  "files": [
+    "design-system/"
+  ],
+  "exports": {
+    "./tokens.css": "./design-system/tokens.css",
+    "./tokens.json": "./design-system/tokens.json",
+    "./components.css": "./design-system/components/bundle.css",
+    "./components.js": "./design-system/components/bundle.js",
+    "./logos/*": "./design-system/assets/Logos/*",
+    "./fonts/*": "./design-system/fonts/*",
+    "./package.json": "./package.json"
+  },
+  "types": "./design-system/components/index.d.ts",
+  "scripts": {
+    "build:tokens": "python3 scripts/build_tokens_css.py"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
